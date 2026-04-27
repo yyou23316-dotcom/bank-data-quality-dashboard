@@ -208,6 +208,7 @@ function App() {
     }
     const chart = echarts.init(riskChartRef.current);
     chart.setOption({
+      animation: false,
       tooltip: { trigger: 'axis' },
       grid: { left: 40, right: 20, top: 36, bottom: 36 },
       xAxis: { type: 'category', data: [text.lowRisk, text.mediumRisk, text.highRisk] },
@@ -241,6 +242,7 @@ function App() {
     const chart = echarts.init(errorChartRef.current);
     const data = Object.entries(errorTypes).map(([name, value]) => ({ name, value }));
     chart.setOption({
+      animation: false,
       tooltip: { trigger: 'item' },
       legend: { bottom: 0, type: 'scroll' },
       series: [{

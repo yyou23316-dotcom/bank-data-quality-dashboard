@@ -1,0 +1,30 @@
+﻿# Java / Maven
+target/
+*.class
+
+# Maven Wrapper jar
+.mvn/wrapper/maven-wrapper.jar
+
+# Node / React
+node_modules/
+dist/
+.vite/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env / sensitive config
+.env
+
+# Maven Wrapper downloaded distributions
+.mvn/wrapper/dists/
+backend/.mvn/wrapper/dists/

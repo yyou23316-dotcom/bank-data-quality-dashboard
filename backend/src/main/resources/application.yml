@@ -1,0 +1,17 @@
+﻿server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bank_it_demo?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: ${BANK_DB_USERNAME:root}
+    password: ${BANK_DB_PASSWORD:your_password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
